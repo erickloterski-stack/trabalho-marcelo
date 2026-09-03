@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedalou / Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+                <img src="imagens/logo.png" alt="logo">
+        </div>
+        <nav class="barnav">
+            <ul>
+                <li><a href="catalogo.html" class="ativo">CATÁLOGO</a></li>
+                <li><a href="sobre.html" class="ativo">SOBRE</a></li>
+                <li><a href="contato.html" class="ativo">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-card">
+                <div class="form-header">
+                    <h1>Fale Conosco</h1>
+                    <p>Preencha os dados abaixo e entraremos em contato.</p>
+                </div>
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="from_name">
+                            Nome Completo <span class="required">*</span>
+                        </label>
+                        <input type="text" id="from_name" name="from_name" placeholder="Digite aqui o seu nome completo"
+                            autocomplete="name" />
+                        <span class="error-msg" id="err-name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="from_email">
+                            E-mail <span class="required">*</span>
+
+                        </label>
+                        <input type="email" id="from_email" name="from_email"
+                            placeholder="Digite aqui o seu seu@email.com" autocomplete="email" />
+                        <span class="error-msg" id="err-email"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(41) 99999-9999" autocomplete="tel" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">
+                            Assunto <span class="required">*</span>
+                        </label>
+                        <input type="text" id="subject" name="subject"
+                            placeholder="Digite aqui o seu assunto da mensagem" />
+                        <span class="error-msg" id="err-subject"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            Mensagem <span class="required">*</span>
+                        </label>
+                        <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..."
+                            maxlength="1000"></textarea>
+                        <span class="error-msg" id="err-message"></span>
+                        <div class="char-counter">
+                            <span id="charCount">0/1000 caracteres</span>
+                        </div>
+                    </div>
+                    <div class="status-message" id="statusMessage"></div>
+                    <div class="form-actions">
+                        <button type="submit" id="sendBtn" class="btn btn-primary">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-loader">Enviando...</span>
+                        </button>
+                        <button type="button" id="clearBtn" class="btn btn-secondary">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape-container">
+            <div class="rodape-col">
+                <h3>FALE CONOSCO</h3>
+                <div class="rodape-contato-item">
+                    <img src="imagens/whatsapp.png">
+                    <div>
+                        <strong>WhatsApp</strong>
+                            +55 (41) 99138-8924
+                        </a>
+                    </div>
+                </div>
+                <div class="rodape-contato-item">
+                    <img src="imagens/marketing-de-email.png">
+                    <div>
+                        <strong>E-mail</strong>
+                            contato@pedalou.com.br
+                        </a>
+                    </div>
+                </div>
+                <div class="rodape-contato-item">
+                    <img src="imagens/mapa.png">
+                    <div>
+                        <strong>Localização</strong>
+                        <span>Curitiba – Paraná, Brasil</span>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="java.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --border: #d1d5db;
+    --border-focus: #2563eb;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary: #e5e7eb;
+    --secondary-hover: #d1d5db;
+    --error: #dc2626;
+    --success: #15803d;
+    --success-bg: #dcfce7;
+    --error-bg: #fee2e2;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+
+bodi {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* empilha header, main e footer */
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.container {
+
+    width: 1000px;
+}
+
+.form-card {
+    background: #111111;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+}
+
+.form-header {
+    margin-bottom: 24px;
+}
+
+.form-header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.form-header p {
+    color: yellow;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.required {
+    color: yellow;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font: inherit;
+    color: black;
+    background: #fff;
+
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #111111;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+input.invalid,
+textarea.invalid {
+    border-color: yellow;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+input.valid,
+textarea.valid {
+    border-color: #2cce16;
+}
+
+.error-msg {
+    display: block;
+    min-height: 16px;
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: yellow;
+}
+
+.char-counter {
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: yellow;
+    text-align: right;
+}
+
+.status-message {
+    display: none;
+    margin-top: 4px;
+
+    padding: 12px 14px;
+    border-radius: 3px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.status-message.success {
+    display: block;
+    background: var(--success-bg);
+    color: #2cce16;
+    border: 1px solid rgba(21, 128, 61, 0.15);
+}
+
+.status-message.error {
+    display: block;
+    background: var(--error-bg);
+    color: var(--error);
+    border: 1px solid rgba(220, 38, 38, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    flex: 1;
+    padding: 13px 16px;
+    font: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 0.2s ease, opacity 0.2s ease, transform 0.15s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+
+    background: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-hover);
+}
+
+.btn-loader {
+    display: none;
+}
+
+.btn-primary.loading .btn-text {
+    display: none;
+}
+
+.btn-primary.loading .btn-loader {
+    display: inline;
+}
+
+@media (max-width: 480px) {
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
+
+.rodape-contato-item{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.rodape-contato-item img{
+    width: 75px;
+    height: 75px;
+}
+
+.rodape-contato-item > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-col h3{
+    font-size: 36px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    color: yellow;
+    font-family: Arial, sans-serif;
+}

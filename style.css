@@ -1,0 +1,466 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    background-color: #0b0b0b;
+}
+
+header {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 74px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.barnav{
+    position: fixed;
+    right: 10px;
+}
+
+.logo{
+    position: fixed;
+    left: 5px;
+}
+
+.logo img{ 
+    padding: 3px;
+    border-radius: 6px;
+    background-color: #ffd83d;
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+}
+
+nav ul li a {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition:
+        background-color 0.25s,
+        color 0.25s;
+    white-space: nowrap;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+    background-color: #ffd83d;
+    color: rgb(0, 0, 0);
+}
+
+.titulo{
+    position: relative;
+    display: block;
+    justify-self: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+} 
+
+.card1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 250px;
+    min-height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.titulocard{
+    color: rgb(15, 15, 15);
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+}
+
+.card{
+    font-family: Arial, sans-serif;
+    color: rgb(15, 15, 15);
+}
+
+.card2{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 250px;
+    min-height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card3{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    width: 250px;
+    min-height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+   border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card3 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.off-road h2{
+    position: relative;
+    font-size: 48px;
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.off-road p{
+    position: relative;
+    font-size: 36px;
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.card1off{
+    position: absolute;
+    top: 1075px;
+    left: 15%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1off img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card2off{
+    position: absolute;
+    top: 1075px;
+    left: 40%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2off img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card3off{
+    position: absolute;
+    top: 1075px;
+    left: 65%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+   border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card3off img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.navoff{
+    position: absolute;
+    top: 800px;
+}
+
+.card1casual{
+    position: absolute;
+    top: 1875px;
+    left: 15%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1casual img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card2casual{
+    position: absolute;
+    top: 1875px;
+    left: 40%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2casual img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card3casual{
+    position: absolute;
+    top: 1875px;
+    left: 65%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+   border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card3casual img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.casual h2{
+    position: relative;
+    font-size: 48px;
+    top: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.casual p{
+    position: relative;
+    font-size: 36px;
+    top: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.navcasual{
+    position: absolute;
+    top: 1600px;
+}
+
+.card1esportiva{
+    position: absolute;
+    top: 2775px;
+    left: 15%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1esportiva img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card2esportiva{
+    position: absolute;
+    top: 2775px;
+    left: 40%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2esportiva img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card3esportiva{
+    position: absolute;
+    top: 2775px;
+    left: 65%;
+    width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: #dfb510;
+   border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card3esportiva img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.esportiva h2{
+    position: relative;
+    font-size: 48px;
+    top: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.esportiva p{
+    position: relative;
+    font-size: 36px;
+    top: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.navesportiva{
+    position: absolute;
+    top: 2500px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+}
+
+.texto{
+    width: 55%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.texto h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.fachada{
+    width: 45%;
+}
+
+.fachada img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    color: white;
+}
+p{
+    font-family: Arial, sans-serif;
+    color: white;
+}
